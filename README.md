@@ -1,1 +1,1 @@
-# goit-js-modul-01-06
+# goit-js-module-01-06
