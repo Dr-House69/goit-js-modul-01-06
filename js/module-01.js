@@ -421,11 +421,11 @@
 
 /* task-36 */
 
-function checkForSpam(message) {
-  let result;
-  message.toLowerCase();
-  result = message.includes('spam') || message.includes('sale');
-  return result;
+// function checkForSpam(message) {
+//   let result;
+//   message.toLowerCase();
+//   result = message.includes('spam') || message.includes('sale');
+//   return result;
   
-}
-console.log( checkForSpam('Spam and SaLE and sPam and sale'));
+// }
+// console.log( checkForSpam('Spam and SaLE and sPam and sale'));
