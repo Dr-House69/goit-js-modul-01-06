@@ -124,7 +124,7 @@
 //   let message;
 //   if (available >= ordered) {
 //     message = `Order is processed, our manager will contact you.`;
-    
+
 //   } else {
 //     message = `Not enough goods in stock!`;
 //   }
@@ -153,13 +153,13 @@
 //   const totalPrice = pricePerDroid * orderedQuantity;
 //   if (totalPrice > customerCredits) {
 //     message = `Insufficient funds!`
-    
+
 //   } else {
 //     customerCredits -= totalPrice
 //     message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`
-    
+
 //   }
-  
+
 //   return message;
 // }
 
@@ -190,10 +190,10 @@
 //   let message;
 //   if ( ordered === 0) {
 //     message = `There are no products in the order!`;
-    
+
 //   } else if (ordered > available) {
 //     message = `Your order is too large, there are not enough items in stock!`;
-    
+
 //   } else {
 //     message = `The order is accepted, our manager will contact you`;
 
@@ -238,21 +238,21 @@
 //   const SILVER_DISCOUNT = 0.05;
 //   const GOLD_DISCOUNT = 0.1;
 //   let discount;
- 
+
 //   if (totalSpent >= 50000) {
 //     discount = GOLD_DISCOUNT;
-  
+
 //   } else if (totalSpent >= 20000 && totalSpent < 50000) {
 //     discount = SILVER_DISCOUNT;
-  
+
 //   } else if (totalSpent >= 5000  && totalSpent < 20000) {
 //     discount = BRONZE_DISCOUNT;
-  
+
 // } else {
 //     totalSpent < 5000;
 //     discount = BASE_DISCOUNT;
 // }
-  
+
 //   return discount;
 // }
 // console.log( getDiscount(46900));
@@ -261,9 +261,9 @@
 
 // function checkStorage(available, ordered) {
 //   let message;
-   
+
 //     message = ordered > available ? 'Not enough goods in stock!' : 'The order is accepted, our manager will contact you';
-  
+
 //   return message;
 // }
 // console.log( checkStorage(100, 100));
@@ -273,9 +273,9 @@
 // function checkPassword(password) {
 //   const ADMIN_PASSWORD = 'jqueryismyjam';
 //   let message;
- 
+
 //  message = password === ADMIN_PASSWORD ? 'Access is allowed' : 'Access denied, wrong password!';
-  
+
 //   return message;
 // }
 // console.log( checkPassword('jqueryismyjam'));
@@ -284,7 +284,7 @@
 
 // function getSubscriptionPrice(type) {
 //   let price;
-  
+
 //  switch (type) { 
 //     case 'starter': 
 //       price = 0;
@@ -299,7 +299,7 @@
 //       break;
 //   }
 
-  
+
 //   return price;
 // }
 // console.log( getSubscriptionPrice('professional'));
@@ -314,16 +314,118 @@
 //         case null:
 //             message = 'Canceled by user!';            
 //             break;
-        
+
 //         case ADMIN_PASSWORD:
 //             message = 'Welcome!';
 //             break;
-          
+
 //         default:
 //             message = 'Access denied, wrong password!';
-            
+
 //     }
-    
+
 //     return message;
 // }
 // console.log( checkPassword('jqueryismyjamGoIT'));
+
+/* task-29 */
+
+// function getShippingCost(country) {
+//     let message;
+//     let price;
+
+// switch (country) {
+//     case 'China':
+//         price = 100;
+//         message = `Shipping to ${country} will cost ${price} credits`;
+//         break;
+//     case 'Chile':
+//         price = 250;
+//         message = `Shipping to ${country} will cost ${price} credits`;
+//         break;
+//     case 'Australia':
+//         price = 170;
+//         message = `Shipping to ${country} will cost ${price} credits`;
+//         break;
+//     case 'Jamaica':
+//         price = 120;
+//         message = `Shipping to ${country} will cost ${price} credits`;
+//         break;
+
+//     default:
+//         message = `Sorry, there is no delivery to your country`;
+
+// }
+
+//   return message;
+// }
+// console.log( getShippingCost('Ukraine'));
+
+/* task-30 */
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${ name.length} characters long`; 
+
+//   return message;
+// }
+// console.log(getNameLength('DrHouse69'));
+
+/* task-31 */
+
+// const courseTopic = "JavaScript essentials";
+
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+
+// console.log( courseTopic[courseTopic.length - 1]);
+
+/* task-32 */
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length);
+
+//   return substring;
+// }
+// console.log(getSubstring('Hello world', 3));
+
+/* task-33 */
+
+// function formatMessage(message, maxLength) {
+//   let result;
+   
+//   result = message.length <= maxLength ? message : message.slice(0, maxLength) + '...';
+
+//   return result;
+// }
+// console.log(formatMessage('Curabitur ligula sapien', 16));
+
+/* task-34 */
+// function normalizeInput(input) {
+//   const normalizeInput = input.toLowerCase();
+//   return normalizeInput;
+// }
+// console.log( normalizeInput('Hello World'));
+
+/* task-35 */
+
+// function checkForName(fullName, name) {
+
+//   const result = fullName.includes(name);
+
+//   return result;
+// }
+// console.log(checkForName('IhorDombik', 'Ihor'));
+
+/* task-36 */
+
+function checkForSpam(message) {
+  let result;
+  message.toLowerCase();
+  result = message.includes('spam') || message.includes('sale');
+  return result;
+  
+}
+console.log( checkForSpam('Spam and SaLE and sPam and sale'));
