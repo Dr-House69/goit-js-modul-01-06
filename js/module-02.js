@@ -103,8 +103,7 @@
 // function splitMessage(message, delimeter) {
 //   let words;
 
-//     // delimeter = '',' ','_';
-//     words = message.split(delimeter);
+   //   words = message.split(delimeter);
     
 //   return words;
 // }
@@ -113,10 +112,156 @@
 
 /* task-11 */
 
-function calculateEngravingPrice(message, pricePerWord) {
+// function calculateEngravingPrice(message, pricePerWord) {
+    
+   
+//    return message.split(' ').length * pricePerWord;
+  
+// }
+// console.log(calculateEngravingPrice("Web-development is creative work", 40));
+
+/* task-12 */
+
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+  
+//    string = array.join(delimeter);
+
+//    return string;
+// }
+// console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+
+/* task-13 */
+
+// function slugify(title) {
+ 
+//    return title.toLowerCase().split(' ').join('-');
+   
+// }
+// console.log(slugify('How to become a JUNIOR developer in TWO WEEKS'));
+
+/* task-14 */
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, - 1);
+// const lastThreeEls = fruits.slice(- 3);
+
+// console.log(fruits.slice(1, - 1));
+
+/* task-15 */
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients);
+
+// console.log(allClients);
+
+/* task-16 */
+
+// function makeArray(firstArray, secondArray, maxLength) {
+  
+   
+//    return firstArray.concat(secondArray).slice(0,maxLength);
+
+   
+// }
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 3));
+  
+/* task-17 */
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) {
+   
+//   console.log(i);
+// }
+
+/* task-18 */
+
+// function calculateTotal(number) {
+
+//    let total = 0;
+ 
+//    for (let i = 0; i <= number; i += 1) {
+
+//       total += i;
+//    }
+   
+//    return total;
+// }
+// console.log(calculateTotal(24));
+ 
+/* task-19 */
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { 
+//   const fruit = fruits[i]; 
+//   console.log(fruit);
+// }
+
+/* task-20 */
+
+// function calculateTotalPrice(order) {
+
+//    let total = 0;
+   
+//    for (const item of order) {
+
+//       total += item;
+//   }
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+/* task-21 */
+
+// function findLongestWord(string) {
+
+//    const arrayString = string.split(' ');
+   
+//    let longestWord = '';
+//    for (const word of arrayString) {
+//      console.log(word);
+//      if (word.length > longestWord.length) {
+//         longestWord = word;
+//      }
+//   }
+   
+     
+//        return longestWord;
+//    }
+   // return string.split(' ').reduce((a, b) => (b.length > a.length) ? b : a);
+
+
+//  console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+
+/* task-22 */
+
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+  
+//    for (let i = min; i <= max; i++) {
+//    console.log(i);
+//   numbers.push(i);
+//    }
+//    // numbers.push(max)
+  
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(5, 12));
+
+/* task-23 */
+
+function filterArray(numbers, value) {
    // Change code below this line
 
 
 
-   // Change code above this line
+  // Change code above this line
 }
