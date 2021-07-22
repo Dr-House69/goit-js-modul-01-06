@@ -414,16 +414,16 @@
 
 /* task-32 */
 
-function includes(array, value) {
+// function includes(array, value) {
   
     
-   for (let i = 0; i < array.length; i++) {
+//    for (let i = 0; i < array.length; i++) {
       
-        if (array[i] === value) {
-            return true;
-        }
-    }
-    return false;
-}
+//         if (array[i] === value) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
   
-console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes([1, 2, 3, 4, 5], 17));
